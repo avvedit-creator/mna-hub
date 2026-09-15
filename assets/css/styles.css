@@ -1,13 +1,13 @@
 /* ==========================================================================
    Movimiento Nacional Artiguista — sistema de estilos
    Paleta e identidad tomadas de la propuesta de marca (idea.png):
-   Azul #063882 · Rojo #E30613 · Fondo #F5F3EF · Texto #111827
+   Azul #063882 · Rojo #B43232 · Fondo #F5F3EF · Texto #111827
    ========================================================================== */
 
 :root {
   --azul: #063882;
   --azul-oscuro: #04255a;
-  --rojo: #e30613;
+  --rojo: #b43232;
   --crema: #f5f3ef;
   --tinta: #111827;
   --blanco: #ffffff;
@@ -95,7 +95,7 @@ p { margin: 0 0 1em; }
 .boton-secundario { background: transparent; border-color: var(--azul); color: var(--azul); }
 .boton-secundario:hover { background: var(--azul); color: var(--blanco); }
 .boton-rojo { background: var(--rojo); color: var(--blanco); }
-.boton-rojo:hover { background: #b8050f; }
+.boton-rojo:hover { background: #902828; }
 
 /* ---------- Header ---------- */
 .encabezado {
@@ -168,7 +168,7 @@ p { margin: 0 0 1em; }
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(1100px 500px at 85% -10%, rgba(227,6,19,.10), transparent 60%),
+    radial-gradient(1100px 500px at 85% -10%, rgba(180,50,50,.10), transparent 60%),
     var(--crema);
   border-bottom: 1px solid var(--borde);
 }
@@ -264,7 +264,7 @@ p { margin: 0 0 1em; }
   width: 46px; height: 46px;
   display: flex; align-items: center; justify-content: center;
   border-radius: 50%;
-  background: rgba(227,6,19,.10);
+  background: rgba(180,50,50,.10);
   color: var(--rojo);
   margin-bottom: 16px;
   font-size: 1.3rem;
@@ -755,7 +755,7 @@ p { margin: 0 0 1em; }
   border: 1px solid var(--borde); border-radius: 10px; padding: 14px;
 }
 .documento-item__icono {
-  width: 36px; height: 36px; border-radius: 8px; background: rgba(227,6,19,.10); color: var(--rojo);
+  width: 36px; height: 36px; border-radius: 8px; background: rgba(180,50,50,.10); color: var(--rojo);
   display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.1rem;
 }
 .documento-item__cuerpo { min-width: 0; flex: 1; }
