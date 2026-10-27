@@ -385,13 +385,30 @@ p { margin: 0 0 1em; }
 .pie ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
 .pie a { color: rgba(255,255,255,.78); font-size: .95rem; }
 .pie a:hover { color: var(--blanco); }
-.pie__redes { display: flex; gap: 12px; margin-top: 8px; }
+.pie__redes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
 .pie__redes a {
-  width: 38px; height: 38px; border-radius: 50%;
-  border: 1px solid rgba(255,255,255,.3);
-  display: flex; align-items: center; justify-content: center;
+  height: 42px; padding: 0 18px; border-radius: 999px;
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.55);
+  color: var(--blanco); font-weight: 700; font-size: .9rem;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
 }
 .pie__redes a:hover { background: var(--rojo); border-color: var(--rojo); }
+
+/* ---------- Seguinos en redes (páginas de ideario) ---------- */
+.seccion--redes { background: var(--crema); text-align: center; }
+.seccion--redes .contenedor { max-width: 960px; }
+.seccion--redes p { color: #33415c; margin: 0 auto 22px; max-width: 560px; }
+.posts-instagram {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px;
+  margin-top: 34px; align-items: start;
+}
+.post-instagram {
+  background: var(--blanco); border: 1px solid var(--borde); border-radius: 14px;
+  overflow: hidden; min-width: 0;
+}
+.post-instagram iframe { display: block; width: 100%; height: 600px; border: 0; }
+@media (max-width: 700px) { .posts-instagram { grid-template-columns: 1fr; } }
 .pie__inferior {
   display: flex; justify-content: space-between; align-items: center;
   padding-top: 22px; font-size: .82rem; color: rgba(255,255,255,.6);
@@ -705,7 +722,7 @@ p { margin: 0 0 1em; }
 .panel-documentos { grid-area: documentos; }
 .panel-novedades { grid-area: novedades; }
 .panel-comunidad { grid-area: comunidad; }
-.franja-redes { grid-area: redes; }
+.redes-hub { grid-area: redes; display: flex; flex-direction: column; gap: 22px; min-width: 0; }
 
 .panel-hub {
   background: var(--blanco);
